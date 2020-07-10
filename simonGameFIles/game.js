@@ -4,7 +4,7 @@ var userClickedPattern =[];
 var starter=0;
 var level=0;
 
-$(document).keypress(function() { if(!starter)
+$(document).on('keypress touchstart' ,(function() { if(!starter)
 {  $("#level-title").text("Level 0");
 	nextSequence();
 
@@ -30,7 +30,7 @@ function nextSequence()
 
 }
 
-$(".btn").click(function() {
+$(".btn").on('click touchstart' , function() {
  var userChosenColour = $(this).attr("id");
  userClickedPattern.push(userChosenColour);
 playSound(userChosenColour);
