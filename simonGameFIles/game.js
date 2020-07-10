@@ -4,7 +4,7 @@ var userClickedPattern =[];
 var starter=0;
 var level=0;
 
-$(document).on('keypress touchstart' ,(function() { if(!starter)
+$(document).on('keyup' ,function() { if(!starter)
 {  $("#level-title").text("Level 0");
 	nextSequence();
 
