@@ -4,7 +4,7 @@ var userClickedPattern =[];
 var starter=0;
 var level=0;
 
-$(document).on('keyup input' ,function() { if(!starter)
+$(document).on('input' ,function() { if(!starter)
 {  $("#level-title").text("Level 0");
 	nextSequence();
 
